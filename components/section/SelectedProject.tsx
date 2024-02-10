@@ -23,7 +23,10 @@ const SelectedProject = () => {
             {/* Filter  */}
             <div className='flex gap-4 items-center flex-wrap mt-4'>
                 {DATA.SELECTED_PROJECTS.FILTER.map(item => (
-                    <FilterButton handler={() => setSelected(item.name)} active={item.name == selected}
+                    <FilterButton
+                        key={`selected-${item?.name}`}
+                        handler={() => setSelected(item.name)}
+                        active={item.name == selected}
                     >
                         {item.icon} {item.name}
                     </FilterButton>

@@ -15,7 +15,10 @@ const FeaturedProject = () => {
             </Paragraph>
             <div className='grid md:grid-cols-2 grid-cols-1  gap-4 items-center justify-around'>
                 {DATA.FEATURED_PROJECTS.map((item, key) => (
-                    <FeaturedCard data={item} />
+                    <FeaturedCard
+                        data={item}
+                        key={`featured-${item?.title}`}
+                    />
                 ))}
             </div>
         </div>

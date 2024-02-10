@@ -20,7 +20,7 @@ const ProjectCard = (props: ProjectCardProps) => {
             </div>
             <div className='flex items-center justify-between py-2'>
                 <div className='flex gap-1 items-center'>
-                    <p>{projectTypeHelper(type)}</p>
+                    <p className=' text-sm'>{projectTypeHelper(type)}</p>
                     <p className='text-ellipsis whitespace-nowrap overflow-hidden text-sm lg:max-w-[9rem] max-w-min font-semibold text-cstm_black'>{title}</p>
                 </div>
                 <Badge>{work}</Badge>

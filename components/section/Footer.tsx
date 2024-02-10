@@ -12,7 +12,7 @@ const Footer = () => {
                     weight='font-medium'
                     size='text-md'
                 >
-                    I'm now seeking full-time employment.<br />If you have any questions, don't hesitate to contact me through email.
+                    I&apos;m now seeking full-time employment.<br />If you have any questions, don&apos;t hesitate to contact me through email.
                 </Paragraph>
                 <PrimaryButton bg_color='bg-cstm_black' color='text-white'>{ICONS.EMAIL} Email Me</PrimaryButton>
             </div>

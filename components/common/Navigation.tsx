@@ -24,7 +24,10 @@ const Navigation = () => {
         <Logo />
         <div className='flex gap-10'>
           {DATA.NAV.map(item => (
-            <Link href={`#${item.toLocaleLowerCase()}`} className='font-medium'>
+            <Link
+              key={item}
+              href={`#${item.toLocaleLowerCase()}`}
+              className='font-medium'>
               <button>
                 {item}
               </button>
